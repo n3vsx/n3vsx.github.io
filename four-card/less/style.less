@@ -1,0 +1,76 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: @font-family;
+}
+
+@Red: hsl(0, 78%, 62%);
+@Cyan: hsl(180, 62%, 55%);
+@Orange: hsl(34, 97%, 64%);
+@Blue: hsl(212, 86%, 64%);
+@Very-Dark-Blue: hsl(234, 12%, 34%);
+@Grayish-Blue: hsl(229, 6%, 66%);
+@font-family: 'Poppins', sans-serif;
+
+.title {
+    padding-top: 10rem;
+    h1.bold {
+        font-weight: 600;
+    }
+    h1.light {
+        font-weight: 200;
+    }
+    p {
+        text-align: center;
+        color: @Grayish-Blue;
+        padding-top: 1rem;      
+    }
+}
+
+.cards {
+    
+    margin-top: 2rem;   
+    .kaart {
+        padding: 2rem;
+        border-radius: 5px;
+        -webkit-box-shadow: -1px 10px 21px 0px rgba(212,212,212,1);
+        -moz-box-shadow: -1px 10px 21px 0px rgba(212,212,212,1);
+        box-shadow: -1px 10px 21px 0px rgba(212,212,212,1);
+    }
+    .supervisor {
+        border-top: 4px solid @Cyan;
+    }
+    .karma {
+        border-top: 4px solid @Orange;
+        margin-top: 2rem;
+        
+    }
+    .team-builder {
+        border-top: 4px solid @Red;
+        width: 100%;
+    }
+
+    .calculator {
+        border-top: 4px solid @Blue;
+    }
+    
+    h3 {
+        font-weight: 600;
+    }
+    p {
+        color: @Grayish-Blue;
+        padding-top: 1rem;
+    }
+}
+
+@media (min-width:761px) {
+    .col-md-4 {
+        padding: 0rem 1rem;
+    }
+}
+
+@media (max-width:761px) {
+    .col-md-4 {
+        padding: 0;
+    }
+}
