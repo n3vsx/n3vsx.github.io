@@ -75,6 +75,8 @@
     height: 15vh;
     background-color: @Dark-Violet;
     border-radius: 10px;
+    position: relative;
+    top: 50px;
 
     .form-control {
         margin: 0rem 2rem;
@@ -94,17 +96,110 @@
     }
 }
 
-.content-2 {
+.content-2-fluid {
+    background-color: rgba(214, 214, 214, 0.3);
     padding-top: 5rem;
     h2 {
         font-family: @font-family;
         font-weight: 700;
         color: @Dark-Violet;
+        padding-top: 5rem;
     }
 
-    p {
+    .undertitle {
         font-family: @font-family;
         color: @Grayish-Violet;
         text-align: center;
+    }
+
+    .cards-row {
+        margin-top: 10rem;
+        padding-bottom: 7rem;
+    }
+
+    .cards {
+        background-color: #ffffff;
+        max-width: 90%;
+        margin: 0rem 2rem;
+        max-height: 275px;
+        padding: 2rem;
+        
+        h3 {
+            font-family: @font-family;
+            font-weight: 700;
+            color: @Dark-Violet;
+            font-size: 18px;
+            margin-top: -2rem;
+        }
+        p {
+            text-align: left;
+            font-family: @font-family;
+            color: @Grayish-Violet; 
+        }
+
+        img {
+            border-radius: 50px;
+            padding: 1rem;
+            position: relative;
+            bottom: 65px;
+            background-color: @Dark-Violet;
+        }
+    }
+
+    .detailed-records {
+        margin-top: 3rem;
+    }
+
+    .fully-customizable {
+        margin-top: 6rem;
+    }
+}
+
+.boost {
+    background-image: url('../images/bg-boost-desktop.svg');
+    background-color: @Dark-Violet;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    .row {
+        h2 {
+            color: #ffffff;
+            font-family: @font-family;
+            font-weight: 700;
+        }
+        .btn {
+            margin-top: 1rem;
+            font-family: @font-family;
+            background-color: @Cyan;
+            border: none;
+            border-radius: 20px;
+            padding: .5rem 1.5rem;
+            font-weight: 700;
+        }
+    }
+}
+
+.footer {
+    background-color: @Very-Dark-Violet;
+    padding: 4rem 0rem;
+
+    .sitemap {
+        color: White;
+        font-family: @font-family;
+        li {
+            list-style-type: none;
+            padding: .2rem 0rem;
+        }
+
+        .li-link {
+            color: @Gray;
+        }
+        
+        .li-heading {
+            padding-bottom: 1rem;
+        }
+
+        ul:nth-child(2) , ul:nth-child(3) {
+            margin-left: 3rem;
+        }
     }
 }
