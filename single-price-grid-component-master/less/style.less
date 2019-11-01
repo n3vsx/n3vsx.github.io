@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: @font-family;;
+}
+
+body {
+    background-color: #e6eff6;
+}
+
+@Cyan: hsl(179, 62%, 43%);
+@Cyan2: hsl(179, 72%, 55%);
+@Bright-Yellow: hsl(71, 73%, 54%);
+@Light-Gray: hsl(0, 0%, 79%);
+@font-family: 'Karla', sans-serif;
+
+.content {
+    height: 50vh;
+    margin-top: 7rem;
+    width: 40%;
+    margin-bottom: 7rem;
+    
+    -webkit-box-shadow: -1px 1px 18px 2px rgba(224,224,224,1);
+    -moz-box-shadow: -1px 1px 18px 2px rgba(224,224,224,1);
+    box-shadow: -1px 1px 18px 2px rgba(224,224,224,1);
+    @media (max-width: 1000px) {
+        width: 90%;
+    }
+
+    .titel {
+        background-color: #ffffff;
+        padding: 2rem;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px;
+    }
+    .title {
+        color: @Cyan;
+        padding-bottom: 1rem;
+        font-weight: 700;
+    }
+
+    .subtitle {
+        color: @Bright-Yellow;
+        font-weight: 700;
+    }
+
+    .title-info {
+        color: @Light-Gray;
+    }
+
+    .left {
+        background-color: @Cyan;
+        padding: 2rem;
+        border-bottom-left-radius: 5px;
+        @media (max-width: 800px) {
+            border-bottom-left-radius: 0px;
+        }
+        .title {
+            color: #ffffff;
+        }
+
+        h3 {
+            float: left;
+            color: #ffffff;
+        }
+
+        .number-subtitle {
+            margin-left: 1rem;
+            color: @Light-Gray;
+            margin-top: -.5rem;
+        }
+
+        p {
+            color: #ffffff;
+        }
+
+        .btn {
+            color: #ffffff;
+            background-color: @Bright-Yellow;
+            border: none;
+            height: 3rem;
+            font-weight: 700;
+            -webkit-box-shadow: 0px 4px 26px -5px rgba(148,148,148,1);
+            -moz-box-shadow: 0px 4px 26px -5px rgba(148,148,148,1);
+            box-shadow: 0px 4px 26px -5px rgba(148,148,148,1);
+        }
+
+    }
+
+    .right {
+        background-color: @Cyan2;
+        padding: 2rem;
+        border-bottom-right-radius: 5px;
+
+        .why {
+            color: #ffffff;
+        }
+
+        .why-p {
+            color: #ffffff;
+            width: 80%;
+            padding-top: 1rem;
+        }
+    }
+}
