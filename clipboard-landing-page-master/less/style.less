@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+}
+@Dark-Grayish-Blue: hsl(210, 10%, 33%);
+@Grayish-Blue: hsl(201, 11%, 66%);
+@Light-Blue: hsl(233, 100%, 69%);
+@Strong-Cyan: hsl(171, 66%, 44%);
+
+.header {
+    background-image: url('../images/bg-header-desktop.png');
+    background-size: cover;
+
+    .title {
+        h1 {
+            font-weight: 600;
+            color: @Dark-Grayish-Blue;
+        }
+
+        p {
+            color: @Grayish-Blue;
+        }
+    }
+
+    .buttons {
+        .mac {
+            background-color: @Light-Blue;
+            margin-left: 1.5rem;
+            border: none;
+            border-radius: 25px;
+            padding: .7rem 1.8rem;
+            font-weight: 600;
+            &:hover {
+                opacity: 0.8;
+            }
+        }   
+
+        .ios {
+            background-color: @Strong-Cyan;
+            border: none;
+            border-radius: 25px;
+            padding: .7rem 1.8rem;
+            font-weight: 600;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+}
+
+.content {
+    margin-top: 7rem;
+    .title {
+        h2 {
+            font-weight: 600;
+            color: @Dark-Grayish-Blue;
+        }
+    }
+
+    .subtitle {
+        text-align: center;
+        color: @Grayish-Blue;
+    }
+}
+
+.image-usp {
+    .usp {
+        @media (max-width: 1000px) {
+            text-align: center;
+            margin-left: -2rem;
+            margin-top: 3rem;
+        }
+        h4 {
+            color: @Dark-Grayish-Blue;
+            font-weight: 600;
+        }
+
+        p {
+            color: @Grayish-Blue;
+        }
+    }
+}
+
+.content2 {
+    margin-top: 5rem;
+    .title {
+        h2 {
+            font-weight: bold;
+        }
+    }
+
+    .subtitle {
+        color: @Grayish-Blue;
+    }
+
+    .image {
+        margin-top: 5rem;   
+    }
+}
+
+.content3 {
+    margin-top: 5rem;
+    .title {
+        h2 {
+            font-weight: 600;
+        }
+    }
+
+    .subtitle {
+        color: @Grayish-Blue;
+    }
+
+    .product-card {
+        text-align: center;
+        h5 {
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+        
+        p {
+            color: @Grayish-Blue
+        }
+    }
+    
+    .logos {
+        margin-top: 5rem;
+        @media (max-width: 1000px) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+}
