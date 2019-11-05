@@ -26,13 +26,16 @@
     .buttons {
         .mac {
             background-color: @Light-Blue;
-            margin-left: 1.5rem;
             border: none;
             border-radius: 25px;
             padding: .7rem 1.8rem;
             font-weight: 600;
             &:hover {
                 opacity: 0.8;
+            }
+
+            @media (min-width: 1000px) {
+                margin-left: 1.5rem;
             }
         }   
 
@@ -87,6 +90,7 @@
     .title {
         h2 {
             font-weight: bold;
+            color: @Dark-Grayish-Blue;
         }
     }
 
@@ -104,6 +108,7 @@
     .title {
         h2 {
             font-weight: 600;
+            color: @Dark-Grayish-Blue;
         }
     }
 
@@ -113,9 +118,11 @@
 
     .product-card {
         text-align: center;
+        margin-top: 2rem;
         h5 {
             font-weight: 600;
             margin-top: 1rem;
+            color: @Dark-Grayish-Blue;
         }
         
         p {
@@ -124,11 +131,135 @@
     }
     
     .logos {
-        margin-top: 5rem;
+        margin-top: 8rem;
         @media (max-width: 1000px) {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            img {
+                margin-top: 4rem;
+            }
         }
     }
+}
+
+
+.content4 {
+    margin-top: 10rem;
+    
+    .title {
+        h2 {
+            color: @Dark-Grayish-Blue;
+            font-weight: 600;
+        }
+    }
+
+    .subtitle {
+        p {
+            color: @Grayish-Blue;
+            margin-top: 1rem;
+        }
+    }
+
+    .buttons {
+        margin-top: 2rem;
+        .mac {
+            background-color: @Light-Blue;
+            border: none;
+            border-radius: 25px;
+            padding: .7rem 1.8rem;
+            font-weight: 600;
+            &:hover {
+                opacity: 0.8;
+            }
+
+            @media (min-width: 1000px) {
+                margin-left: 1.5rem;
+            }
+        }   
+    
+        .ios {
+            background-color: @Strong-Cyan;
+            border: none;
+            border-radius: 25px;
+            padding: .7rem 1.8rem;
+            font-weight: 600;
+            &:hover {
+                opacity: 0.8;
+            }
+        }
+    }
+
+    .spacing {
+        margin: 5rem 2rem;
+    }
+}
+
+.footer {
+    background-color: rgb(240, 240, 240);
+    padding: 1rem 0rem;
+    a {
+        color: @Dark-Grayish-Blue;
+        text-decoration: none;
+        &:hover {
+            text-decoration: none;
+            color: @Strong-Cyan;
+        }
+    }
+}
+
+
+
+
+@media (max-width: 1000px) {
+    .header {
+        .title {
+            h1 {
+                margin-top: 3rem;
+                text-align: center;
+            }
+            
+            p {
+                text-align: center;
+            }
+        }
+
+        .btn {
+            width: 100%;
+            margin-top: 1rem;
+        }
+    }
+
+    .content2 {
+        margin-top: 5rem;
+
+        p {
+            text-align: center;
+        }
+    }
+
+    .content4 {
+        .btn {
+            width: 100%;
+        }
+    }
+
+    .product-card {
+        margin-top: 2rem;
+    }
+
+    .footer {
+        img {
+            width: 25%;
+            padding: 1.5rem;
+        }
+
+        .last {
+            margin-bottom: 2rem;
+        }
+    }
+}
+
+
+button {
+    -webkit-box-shadow: 0px 6px 18px -4px rgba(122,122,122,1);
+    -moz-box-shadow: 0px 6px 18px -4px rgba(122,122,122,1);
+    box-shadow: 0px 6px 18px -4px rgba(122,122,122,1);
 }
