@@ -19,12 +19,17 @@
         color: @Pink;
         border-radius: 25px;
         padding: .5rem 1.5rem;
-
+        &:hover {
+            background-color: @Pink;
+            color: #ffffff;
+            border: none;
+            margin-bottom:2px;
+        }
     }
 }
 
 .content1 {
-    padding-top: 5rem;
+    padding-top: 10rem;
     .title {
         h1 {
             font-family: @Poppins;
@@ -44,6 +49,12 @@
             border: none;
             font-family: @Open-sans;
             font-weight: 600;
+            &:hover {
+                background-color: #ffffff;
+                border: 1px solid @Pink;
+                color: @Pink;
+                margin-bottom: -2px;
+            }
         }
     }
 
@@ -131,6 +142,12 @@
         border: none;
         font-family: @Open-sans;
         font-weight: 600;
+        &:hover {
+            background-color: #ffffff;
+            border: 1px solid @Pink;
+            color: @Pink;
+            margin-bottom: -2px;
+        }
     }
 }
 
@@ -144,6 +161,10 @@
         font-family: @Open-sans;
     }
 
+    .fas {
+        color: #ffffff;
+    }
+
     .social-media {
         color: #ffffff;
         margin-top: 3rem;
@@ -152,5 +173,76 @@
     h2 {
         color: #ffffff;
         font-family: @Poppins;
+    }
+
+    .newsletter {
+        button {
+            background-color: @Pink;
+            border: none;
+            font-family: @Open-sans;
+            padding: 0rem 3rem;
+            font-weight: 600;
+        }
+
+        .form-control {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .content1 {
+        h1 {
+            text-align: center;
+        }
+    }
+
+    .grow-together {
+        text-align: center;
+        h2 {
+            align-self: center !important;
+        }
+        
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .flowing-conversations {
+        text-align: center;
+        h2 {
+            align-self: center !important;
+            margin-top: 3rem;
+        }
+    }
+
+    .your-users {
+        text-align: center;
+        h2 {
+            align-self: center !important;
+        }
+
+        p {
+            margin-bottom: 3rem;
+        }
+    }
+
+    .footer {
+        .text {
+            p {
+                color: black;
+                margin-top: 1rem;
+            }
+        }
+
+        .phone {
+            .fas {
+                color: #00252e;
+            }
+        }
+
+        .social-media {
+            margin-top: 10rem;
+        }
     }
 }
