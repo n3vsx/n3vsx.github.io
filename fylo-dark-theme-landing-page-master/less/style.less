@@ -13,6 +13,9 @@ body {
 @main-dark: hsl(218, 28%, 13%);
 @white: hsl(0, 0%, 100%);
 @Cyan: hsl(176, 68%, 64%);
+@footer: hsl(216, 53%, 9%);
+
+
 
 header {
     .header {
@@ -110,6 +113,186 @@ main {
             color: @Cyan;
             text-decoration: underline;
             font-family: @open-sans;
+        }
+    }
+
+    .content4 {
+        background-color: @main-dark;
+        padding: 5rem 6rem;
+        .background-quote {
+            background-image: url('/images/bg-quotes.png');
+            background-repeat: no-repeat;
+            @media (min-width: 1000px) {
+                background-position-x: 5%;
+            }
+        }
+        .review {
+            background-color: hsl(219, 30%, 18%);
+            padding: 2rem;
+            color: @white;
+            font-family: @open-sans;
+            border-radius: 5px;
+            margin: 1rem;
+            
+           .profile {
+               img {
+                   border-radius: 100px;
+                   width: 8%;
+               }
+
+               .profile-info {
+                   .profile-title {
+                       font-weight: 600;
+                       font-family: @raleway;
+                   }
+
+                   .profile-subtitle {
+                       font-size: 10px;
+                   }
+               }
+           }
+        }
+    }
+
+    .early-access {
+        padding: 2rem 0rem;
+        background-color: @main-dark;
+        color: @white;
+        text-align: center;
+
+        .early-access-content {
+            background-color: hsl(217, 28%, 15%);
+            padding: 2rem 4rem;
+            border-radius: 8px;
+            -webkit-box-shadow: 3px 2px 8px 1px rgba(15,15,20,1);
+            -moz-box-shadow: 3px 2px 8px 1px rgba(15,15,20,1);
+            box-shadow: 3px 2px 8px 1px rgba(15,15,20,1);
+            position: relative;
+            top: 150px;
+
+            h2 {
+                font-family: @raleway;
+                font-weight: 600;
+            }
+
+            p {
+                font-family: @open-sans;
+            }
+
+            .inputs {
+                width: 100%;
+
+                input {
+                    border-radius: 25px;
+                    padding: 1.5rem;
+                }
+
+                button {
+                    height: 50px;
+                    width: 40%;
+                    border-radius: 25px;
+                    background-color: @Cyan;
+                    font-family: @open-sans;
+                    border: none;
+                }
+            }
+        }
+    }
+}
+
+footer {
+    .container-fluid {
+        padding-top: 12rem;
+        padding-bottom: 5rem;
+        padding-left: 7rem;
+        padding-right: 7rem;
+        background-color: @footer;
+        color: @white;
+        font-family: @open-sans;
+
+        .lorem-ipsum {
+            margin-top: -5px;
+        }
+
+        .submenu {
+            li {
+                list-style: none;
+                padding-top: 1rem;
+                a {
+                    color: @white;
+                    text-decoration: none;
+
+                    &:hover {
+                        color: @Cyan;
+                    }
+                }
+            }
+
+            li:first-child {
+                padding-top: 0;
+            }
+        }
+
+        .social-media {
+            .fab {
+                border: 1px solid @white;
+                padding: 1rem;
+                border-radius: 100px;
+                &:hover {
+                    color: @Cyan;
+                    border: 1px solid @Cyan;
+                }
+            }
+        }
+    }
+}
+
+
+
+@media (max-width: 1000px) {
+    header {
+        .header {
+            padding: 1rem;
+        }
+    }
+
+    main {
+        .content1 {
+            .first-title {
+                button {
+                    width: 70%;
+                }
+            }
+        }
+
+        .content3 {
+            padding: 2rem;
+
+            h2{
+                padding-top: 3rem;
+            }
+        }
+
+        .early-access {
+            padding: 1rem;
+            .inputs {
+                flex-direction: column !important;
+                button {
+                    margin-top: 1rem;
+                    width: 100% !important;
+                    margin-left: -0.1rem !important;
+                }
+            }
+        }
+    }
+
+    footer {
+        .submenu {
+            margin-top: 3rem;
+        }
+
+        .social-media {
+            margin-top: 3rem;
         }
     }
 }
