@@ -3,5 +3,74 @@
     padding: 0;
 }
 
+body {
+    background-color: hsl(219, 30%, 18%);
+}
+
 @open-sans: 'Open Sans', sans-serif;
 @raleway: 'Raleway', sans-serif;
+
+@main-dark: hsl(218, 28%, 13%);
+@white: hsl(0, 0%, 100%);
+@Cyan: hsl(176, 68%, 64%);
+
+header {
+    .header {
+        padding: 3rem;
+
+        li {
+            list-style: none;
+            margin: 0rem 2rem;
+            
+            a {
+                text-decoration: none;
+                font-size: 18px;
+                color: @white;
+
+                &:hover {
+                    color: @Cyan;
+                }
+            }
+        }
+    }
+}
+
+main {
+    .content1 {
+        background-image: url('/images/bg-curvy-desktop.svg');
+        background-size: 100%;
+        background-repeat: no-repeat;
+        background-position: center bottom;
+        padding-bottom: 5rem;
+
+        .first-title {
+            color: @white;
+            text-align: center;
+
+            h1 {
+                font-family: @raleway;
+                font-weight: 700;
+            }
+    
+            p {
+                font-family: @open-sans;
+            }
+    
+            button {
+                background-color: @Cyan;
+                width: 40%;
+                border: none;
+                border-radius: 25px;
+                padding: .5rem;
+                font-family: @open-sans;
+                margin-top: 1rem;
+            }
+        }
+    }
+    
+
+    .content2 {
+        background-color: @main-dark;
+        padding-top: 5rem;
+    }
+}
