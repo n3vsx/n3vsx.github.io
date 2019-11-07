@@ -1,0 +1,103 @@
+
+@purple: #d3b6e3;
+@dark-purple: #301934;
+@midnight-blue: #1e0935;
+
+@heading: 'Raleway', sans-serif;
+@paragraph: 'Open Sans', sans-serif;
+
+
+header {
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,9,53,1) 48%, rgba(48,25,52,1) 100%);
+    padding: 1rem 3rem;
+    .container-fluid {
+        img {
+            border-radius: 25px;
+        }
+
+        li {
+            list-style: none;
+            padding: 0rem 2rem;
+
+            a {
+                color: #ffffff;
+                font-size: 18px;
+                font-family: @heading;
+                &:hover {
+                    color: @purple;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+main {
+    padding: 3rem;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,9,53,1) 48%, rgba(48,25,52,1) 100%);
+    .content1 {
+        padding-top: 2rem;
+        padding-bottom: 5rem;
+        h1 {
+            color: #ffffff;
+            font-family: @heading;
+        }
+
+        p {
+            color: #ffffff;
+            font-family: @paragraph;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            width: 80%;
+        }
+
+        button {
+            background-color: @purple;
+            border: none;
+            color: @midnight-blue;
+            font-family: @heading;
+            width: 50%;
+            font-weight: 600;
+            -webkit-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
+            -moz-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
+            box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
+
+            &:hover {
+                background-color: @dark-purple;
+            }
+        }
+
+        button:focus {
+            -webkit-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
+            -moz-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
+            box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
+            
+        }
+    }
+
+    .content2 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .usp {
+            text-align: center;
+
+            h3   {
+                color: #ffffff;
+                font-family: @heading;
+                padding-top: 1rem;
+            }
+
+            p {
+                color: #ffffff;
+                font-family: @paragraph;
+                padding-top: 1rem;
+            }
+        }
+
+        .second-row-usp {
+            padding-top: 5rem;
+        }
+    }
+}
