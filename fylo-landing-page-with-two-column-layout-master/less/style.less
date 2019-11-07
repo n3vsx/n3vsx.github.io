@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 3rem;
+}
+
+@raleway: 'Raleway', sans-serif;
+@open-sans: 'Open Sans', sans-serif;
+
+@lightweight: 400;
+@heavyweight: 700;
+
+@VeryDarkBlue: hsl(243, 87%, 12%);
+@DesaturatedBlue: hsl(238, 22%, 44%);
+@BrightBlue: hsl(224, 93%, 58%);
+@ModerateCyan: hsl(170, 45%, 43%);
+@LightGrayishBlue: hsl(240, 75%, 98%);
+@LightGray: hsl(0, 0%, 75%);
+
+header {
+    padding-bottom: 5rem;
+    font-family: @raleway;
+    li {
+        list-style: none;
+        a {
+            font-size: 20px;
+            color: @VeryDarkBlue;
+            &:hover {
+                text-decoration: none;
+                color: @BrightBlue;
+            }
+        }
+    }
+}
+
+main {
+    .content1 {
+        padding-bottom: 10rem;
+        h1 {
+            font-family: @raleway;
+            color: @VeryDarkBlue;
+            font-weight: @heavyweight;
+        }
+
+        p {
+            font-family: @open-sans;
+            color: @VeryDarkBlue;
+            padding: 1rem 0rem;
+        }
+
+        .inputs {
+            input {
+                width: 50%;
+                border: 1px solid gray;
+                padding: 1.4rem 1rem;
+            }
+
+            button {
+                margin-left: 1rem;
+                width: 30%;
+                background-color: @BrightBlue;
+                border: 1px solid transparent;
+                &:hover {
+                    border: 1px solid @BrightBlue;
+                    background-color: #ffffff;
+                    color: @BrightBlue;
+                }
+            }
+        }
+    }
+
+    .content2 {
+        background-image: url('/bg-curve-desktop.svg');
+
+        h2 {
+            font-size: 40px;
+            font-family: @raleway;
+            color: @VeryDarkBlue;
+            font-weight: @heavyweight;
+            padding-bottom: 2rem;
+        }
+
+        p {
+            font-family: @open-sans;
+            color: @VeryDarkBlue;
+        }
+
+        a {
+            font-family: @open-sans;
+            color: @ModerateCyan;
+            text-decoration: underline;
+        }
+
+        .review {
+            width: 50%;
+            padding: 1rem;
+            color: @VeryDarkBlue;
+            border-radius: 5px;
+            margin-top: 4rem;
+            .profile {
+                img {
+                    border-radius: 100px;
+                }
+                .profile-info {
+                    margin-left: 1rem;
+                    .profile-name {
+                        font-weight: @heavyweight;
+                    }
+                    .profile-title {
+                        font-size: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
+
