@@ -155,7 +155,7 @@ main {
             p {
                 font-family: @paragraph;
                 color: @purple;
-                
+                padding-top: 1rem;
             }
 
             img {
@@ -181,6 +181,22 @@ main {
                 &:hover {
                     transform: scale(1.1);
                 }
+            }
+        }
+    }
+
+    .content4 {
+        .profile-usp {
+            background-image: url('../images/hexagon.png');
+            height: 100px;
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+            color: @midnight-blue;
+            transition: 0.3s ease-in-out;
+            &:hover {
+                transform: scale(1.05);
+                transform: rotate(10deg);
             }
         }
     }
