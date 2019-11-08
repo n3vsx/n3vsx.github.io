@@ -3,6 +3,7 @@
 @dark-purple: #301934;
 @midnight-blue: #1e0935;
 @gold: #FFD700;
+@grey: #CDCDCD;
 
 @heading: 'Raleway', sans-serif;
 @paragraph: 'Open Sans', sans-serif;
@@ -38,6 +39,7 @@ main {
     padding: 3rem;
     background: rgb(2,0,36);
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(30,9,53,1) 48%, rgba(48,25,52,1) 100%);
+    
     .content1 {
         padding-top: 2rem;
         padding-bottom: 5rem;
@@ -47,7 +49,7 @@ main {
         }
 
         p {
-            color: #ffffff;
+            color: @purple;
             font-family: @paragraph;
             padding-top: 1rem;
             padding-bottom: 1rem;
@@ -61,14 +63,14 @@ main {
             font-family: @heading;
             width: 50%;
             font-weight: 600;
-            
             -webkit-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
             -moz-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
             box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
-
+            transition: 0.3s ease-in-out;
             &:hover {
                 background-color: #ffffff;
                 color: black;
+                transform: scale(1.1);
             }
         }
 
@@ -93,7 +95,7 @@ main {
             }
 
             p {
-                color: #ffffff;
+                color: @purple;
                 font-family: @paragraph;
                 padding-top: 1rem;
             }
@@ -108,6 +110,7 @@ main {
         padding-top: 5rem;
         padding-bottom: 5rem;
         .title {
+            padding-bottom: 3rem;
             text-align: center;
             h2 {
                 font-family: @heading;
@@ -116,8 +119,34 @@ main {
             }
 
             p {
-                color: #ffffff;
+                color: @purple;
                 font-family: @paragraph;
+            }
+        }
+
+        .project {
+            text-align: left;
+            h3 {
+                color :#ffffff;
+                font-family: @heading;
+                font-size: 35px;
+            }
+
+            p {
+                font-family: @paragraph;
+                color: @purple;
+                
+            }
+
+            img {
+                -webkit-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
+                -moz-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
+                box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
+                border-radius: 10px;
+                transition: 0.3s ease-in-out;
+                &:hover {
+                    transform: scale(1.1);
+                }
             }
         }
     }
