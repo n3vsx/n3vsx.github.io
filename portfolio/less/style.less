@@ -2,6 +2,7 @@
 @purple: #d3b6e3;
 @dark-purple: #301934;
 @midnight-blue: #1e0935;
+@gold: #FFD700;
 
 @heading: 'Raleway', sans-serif;
 @paragraph: 'Open Sans', sans-serif;
@@ -25,7 +26,7 @@ header {
                 font-size: 18px;
                 font-family: @heading;
                 &:hover {
-                    color: @purple;
+                    color: @gold;
                     text-decoration: none;
                 }
             }
@@ -54,18 +55,20 @@ main {
         }
 
         button {
-            background-color: @purple;
+            background-color: @gold;
             border: none;
             color: @midnight-blue;
             font-family: @heading;
             width: 50%;
             font-weight: 600;
+            
             -webkit-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
             -moz-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
             box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
 
             &:hover {
-                background-color: @dark-purple;
+                background-color: #ffffff;
+                color: black;
             }
         }
 
@@ -98,6 +101,24 @@ main {
 
         .second-row-usp {
             padding-top: 5rem;
+        }
+    }
+
+    .content3 {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .title {
+            text-align: center;
+            h2 {
+                font-family: @heading;
+                color: #ffffff;
+                font-size: 42px;    
+            }
+
+            p {
+                color: #ffffff;
+                font-family: @paragraph;
+            }
         }
     }
 }
