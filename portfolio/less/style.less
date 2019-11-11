@@ -3,6 +3,7 @@
 @dark-purple: #301934;
 @midnight-blue: #1e0935;
 @gold: #FFD700;
+@light-gold: rgb(247, 219, 64);
 @grey: #CDCDCD;
 
 @heading: 'Raleway', sans-serif;
@@ -47,6 +48,8 @@ main {
             color: #ffffff;
             font-family: @heading;
             font-size: 50px;
+            animation-name: title;
+            animation-duration: 2s;
         }
 
         p {
@@ -55,6 +58,11 @@ main {
             padding-top: 1rem;
             padding-bottom: 1rem;
             width: 80%;
+            animation-name: sub-title;
+            animation-duration: 2s;
+            animation-delay: .5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
         }
 
         button {
@@ -68,6 +76,11 @@ main {
             -moz-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
             box-shadow: 5px 6px 10px 0px rgba(0,0,0,1);
             transition: 0.3s ease-in-out;
+            animation-name: sub-title;
+            animation-duration: 2s;
+            animation-delay: .5s;
+            animation-fill-mode: forwards;
+            opacity: 0;
             &:hover {
                 background-color: #ffffff;
                 color: black;
@@ -75,11 +88,55 @@ main {
             }
         }
 
+        img {
+            animation-name: image;
+            animation-duration: 2s;
+            animation-delay: 1s;
+            animation-fill-mode: forwards;
+            opacity: 0;
+        }
+
         button:focus {
             -webkit-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
             -moz-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
             box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
             
+        }
+
+        @keyframes title {
+            from{
+                transform: translateX(-100px);
+                opacity: 0;
+            }
+
+            to{
+                transform: translateX(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes sub-title {
+            from{
+                transform: translateY(100px);
+                opacity: 0;
+            }
+
+            to{
+                transform: translateY(0px);
+                opacity: 1;
+            }
+        }
+
+        @keyframes image {
+            from{
+                transform: translateX(100px);
+                opacity: 0;
+            }
+
+            to{
+                transform: translateY(0px);
+                opacity: 1;
+            }
         }
     }
 
@@ -186,14 +243,67 @@ main {
     }
 
     .content4 {
-        .profile-usp {
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+        .profile-usp-logo {
             background-image: url('../images/hexagon.png');
             height: 100px;
             background-size: contain;
             background-repeat: no-repeat;
             background-position: center;
-            color: @midnight-blue;
-            
+            color: @midnight-blue; 
+        }
+
+        .profile-usp {
+            text-align: center;
+            padding-top: 1rem;
+            h3 {
+                font-family: @heading;
+                color: #ffffff;
+            }
+
+            p {
+                font-family: @paragraph;
+                color: @purple;
+            }
+        }
+
+        .profile {
+            padding-top: 5rem;
+            h2 {
+                color :#ffffff;
+                font-family: @heading;
+                font-size: 42px;
+            }
+
+            p {
+                font-family: @paragraph;
+                color: @purple;
+                text-align: center;
+            }
+
+            img {
+                -webkit-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
+                -moz-box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
+                box-shadow: 5px 6px 10px 0px rgba(0,0,0,1) !important;
+                border-radius: 10px;
+            }
+        }
+
+        .progress-div {
+            padding-top: 8rem;
+            width: 100%;
+            .progress {
+                height: 25px;
+                .progress-bar {
+                    color: @dark-purple;
+                    font-family: @heading;
+                    font-size: 15px;
+                    text-align: left;
+                    padding-left: 1rem;
+                    font-weight: 600;
+                }
+            }
         }
     }
 }
