@@ -5,21 +5,24 @@ const paper_img = document.getElementById('paper');
 const scissor_img = document.getElementById('scissor');
 const rock_img = document.getElementById('rock');
 const score_div = document.getElementById('score_div');
-const userScore_h2 = document.getElementById('score_h2');
+const userScore_h4 = document.getElementById('userScore_h4');
+const computerScore_h4 = document.getElementById('computerScore_h4');
 
 function getComputerChoice() {
-    const choices = ['Paper', 'Scissor', 'Rock'];
+    const choices = ['paper', 'scissor', 'rock'];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
 
 function win(userChoice, computerChoice) {
     userScore++;
-    score_h2.innerHTML = userScore;
+    userScore_h4.innerHTML = "You: " + userScore;
     game_sentence.innerHTML = userChoice + " beats " + computerChoice + ". You win!";
 }
 
 function lose(userChoice, computerChoice) {
+    computerScore++;
+    computerScore_h4.innerHTML = "AI: " + computerScore;
     game_sentence.innerHTML = userChoice + " loses from " + computerChoice + ". You lost!";
 }
 
@@ -31,19 +34,19 @@ function draw(userChoice, computerChoice) {
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
-        case "PaperRock":
-        case "RockScissor":
-        case "ScissorPaper":
+        case "paperrock":
+        case "rockscissor":
+        case "scissorpaper":
             win(userChoice, computerChoice);
             break;
-        case "RockPaper":
-        case "ScissorRock":
-        case "PaperScissor":
+        case "rockpaper":
+        case "scissorrock":
+        case "paperscissor":
             lose(userChoice, computerChoice);
             break;
-        case "RockRock":
-        case "PaperPaper":
-        case "ScissorScissor":
+        case "rockrock":
+        case "paperpaper":
+        case "scissorscissor":
             draw(userChoice, computerChoice);
             break;
     }
@@ -52,15 +55,15 @@ function game(userChoice) {
 
 function main() {
     paper_img.addEventListener('click', function()  {
-        game('Paper');
+        game('paper');
     })
     
     scissor_img.addEventListener('click', function() {
-        game('Scissor');
+        game('scissor');
     })
     
     rock_img.addEventListener('click', function()  {
-        game('Rock');
+        game('rock');
     })
 }
 
