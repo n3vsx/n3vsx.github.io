@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  display: border-box;
+}
+body {
+  background: linear-gradient(to top left, #1f3756 0%, #141539 100%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  height: 100vh;
+}
+header .container {
+  padding: 2rem 0rem;
+}
+header .container .row {
+  border: 3px solid rgba(255, 255, 255, 0.2);
+  padding: 1rem;
+  border-radius: 20px;
+}
+header .container h1 {
+  color: #ffffff;
+  font-weight: bold;
+}
+header .container .score {
+  background-color: #ffffff;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 4px 4px 15px 0px rgba(0, 0, 0, 0.75);
+}
+header .container .score label {
+  color: hsl(229, 64%, 46%);
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+header .container .score h2 {
+  font-size: 50px;
+  font-weight: bold;
+  color: #474747;
+}
+main .container {
+  background-position: 50%;
+  background-position-y: 65%;
+  background-repeat: no-repeat;
+  background-image: url('/images/bg-triangle.svg');
+}
+main .container img {
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+main .container img:hover {
+  transform: scale(1.1);
+}
+main .rock {
+  padding-top: 5rem;
+}
+main h2 {
+  color: #ffffff;
+}
+#game_sentence {
+  color: #ffffff;
+}

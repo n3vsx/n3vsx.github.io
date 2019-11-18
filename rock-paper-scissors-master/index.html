@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="less/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed&display=swap" rel="stylesheet">
+
+  
+  <title>Frontend Mentor | Rock, Paper, Scissors</title>
+
+  <!-- Score
+  Rules
+
+  You Picked
+  The House Picked
+
+  You Win
+  You Lose
+
+  Play Again -->
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 d-flex flex-column">
+          <img class="align-self-start" src="images/logo.svg" alt="logo">
+        </div>
+        <div class="col-md-8 d-flex align-items-center justify-content-center">
+            <h2 id="game_sentence">Start the game!</h2>
+        </div>
+        <div id="score_div" class="col-md-2 d-flex align-items-center justify-content-center flex-column score">
+          <label>SCORE</label>
+          <h2 id="userScore_h2">User: 0</h2>
+          <h2 id="computerScore_h2">AI: 0</h2>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="row d-flex justify-content-center align-items-center">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <img id="paper" src="/images/paper.png" alt="paper-icon" width="58%">
+        </div>
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <img id="scissor" src="/images/scissors.png" alt="scissor-icon" width="68%">
+        </div>
+      </div>
+      <div class="row rock d-flex justify-content-center align-items-center">
+        <div class="col-md-4 d-flex justify-content-center align-items-center">
+          <img id="rock" src="/images/rock.png" alt="rock-icon" width="60%">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  
+  <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="js/custom.js"></script>
+</body>
+</html>
