@@ -9,7 +9,7 @@ const userScore_h4 = document.getElementById('userScore_h4');
 const computerScore_h4 = document.getElementById('computerScore_h4');
 
 function getComputerChoice() {
-    const choices = ['paper', 'scissor', 'rock'];
+    const choices = ['Paper', 'Scissor', 'Rock'];
     const randomNumber = Math.floor(Math.random() * 3);
     return choices[randomNumber];
 }
@@ -34,19 +34,19 @@ function draw(userChoice, computerChoice) {
 function game(userChoice) {
     const computerChoice = getComputerChoice();
     switch (userChoice + computerChoice) {
-        case "paperrock":
-        case "rockscissor":
-        case "scissorpaper":
+        case "PaperRock":
+        case "RockScissor":
+        case "ScissorPaper":
             win(userChoice, computerChoice);
             break;
-        case "rockpaper":
-        case "scissorrock":
-        case "paperscissor":
+        case "RockPaper":
+        case "ScissorRock":
+        case "PaperScissor":
             lose(userChoice, computerChoice);
             break;
-        case "rockrock":
-        case "paperpaper":
-        case "scissorscissor":
+        case "RockRock":
+        case "PaperPaper":
+        case "ScissorScissor":
             draw(userChoice, computerChoice);
             break;
     }
@@ -55,15 +55,15 @@ function game(userChoice) {
 
 function main() {
     paper_img.addEventListener('click', function()  {
-        game('paper');
+        game('Paper');
     })
     
     scissor_img.addEventListener('click', function() {
-        game('scissor');
+        game('Scissor');
     })
     
     rock_img.addEventListener('click', function()  {
-        game('rock');
+        game('Rock');
     })
 }
 
